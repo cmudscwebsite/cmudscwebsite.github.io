@@ -11,9 +11,17 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<style>
+  	nav ul li a, nav .brand-logo{
+  		color:black;
+  	}
+  	nav{
+  		position:fixed;
+  	}
+  	</style>
 </head>
 <body>
-	<div class="navbar-fixed">
+	<!-- <div class="navbar-fixed"> -->
 		<nav class="transparent">
 			<div class="nav-wrapper">
 				<a href="index.html" class="brand-logo">Home</a>
@@ -23,6 +31,11 @@
 				</ul>
 			</div>
 		</nav>
+	<!-- </div> -->
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="img/header.jpg" alt="parallax">
+		</div>
 	</div>
 	<div class="container">
 		<!-- What we Do -->
@@ -92,4 +105,9 @@
 			<!-- <div class="col s12 m3"></div> -->
 		</div>
 	</div>
+	<script>
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
+	</script>
 </body>
