@@ -1,3 +1,27 @@
+/*nav ul li a, nav .brand-logo{
+    color:black;
+}
+
+nav{
+    position:fixed;
+}
+
 nav ul{
-	margin-right:5%;
+    margin-right:5%;
+}*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+.face {
+    width: 150px;
+    height: 150px;
 }
