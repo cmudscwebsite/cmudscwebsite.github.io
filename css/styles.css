@@ -17,3 +17,12 @@ main {
 .parallax-container{
 	z-index:-100;
 }
+
+.sub_header {
+    margin-left: 10px;
+}
+
+.lecture-video {
+    padding: 10px;
+    height: 400px;
+}
