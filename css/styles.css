@@ -1,3 +1,8 @@
 nav ul{
 	margin-right:5%;
+	z-index:1000;
+}
+
+.parallax-container{
+	z-index:-100;
 }
