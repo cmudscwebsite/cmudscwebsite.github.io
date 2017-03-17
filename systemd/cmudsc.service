@@ -3,7 +3,7 @@ Description=cmudsc
 
 [Service]
 TimeoutStartSec=0
-ExecStart=/root/go/src/github.com/thepavangollapalli/DSC_website
+ExecStart=/root/go/src/github.com/thepavangollapalli/DSC_website/app
 Restart=always
 
 [Install]
