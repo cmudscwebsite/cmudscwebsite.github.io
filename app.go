@@ -14,7 +14,7 @@ func main() {
 	log.Info("CMU Data Science Club Website")
 
 	//Serve static files
-	http.Handle("/", http.FileServer(http.Dir("/root/go/src/github.com/thepavangollapalli/DSC_website/static")))
+	http.Handle("/", http.FileServer(http.Dir("/root/go/src/github.com/DSC_website/static")))
 
 	//Https setup
 	var m letsencrypt.Manager
