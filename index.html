@@ -16,15 +16,16 @@
 	<body>
 
 		<header class="navbar-fixed">
-		   <nav>
-		    <div class="nav-wrapper">
-		      <ul id="nav-mobile" class="right">
-		        <li><a href="#events">Club Events</a></li>
-		        <li><a href="#tutorials">Resources</a></li>
-		        <li><a href="#team">Leadership</a></li>
-		      </ul>
-		    </div>
-		  </nav>
+			<nav>
+				<div class="nav-wrapper">
+					<ul id="nav-mobile" class="right">
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#events">Club Events</a></li>
+						<li><a href="#tutorials">Resources</a></li>
+						<li><a href="#team">Leadership</a></li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 
 		<main>
@@ -37,21 +38,29 @@
 
 			<div class="container">
 				<div name="about" class="section white">
+					<a name="about"></a>
+					<div class="center-align">
+						<h3>About Us</h3>
+						<p> The CMU Data Science Club was founded last semester by a group of student eager to bring the intricacies of data science to the Carnegie Mellon student body. The rest of this is a placeholder</p>
+					</div>
 				</div>
-
+				<div class="divider"></div>
 				<div name="events" class="section white">
 					<a name="events"></a>
-					<h3 class="center-align"> Club Events </h3>
+					<h3 class="center-align"> Club Events </h3><br />
+					<div class="center-align calendar">
+						<iframe src="https://calendar.google.com/calendar/embed?src=andrew.cmu.edu_kb5kaku0ltplickj3q6dh5tii0%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="650" height="487.5" frameborder="0" scrolling="no"></iframe>
+					</div><br />
 					<div class="row">
 						<div class="col s12">
-							<div class="card horizontal event">
+							<div class="card horizontal event hoverable">
 								<div class="event-side">
 									<h5>3/15/2017</h5>
 									<h5>BH A51</h5>
 									<a class="waves-effect waves-light btn" style="margin-top:5%;">RSVP</a>
 								</div>
 								<div class="event-main">
-									<h4>Michael's Workshop</h4>
+									<h4>NLP Workshop</h4>
 									<div class="chip">Python</div>
 									<div class="chip">NLP</div>
 									<p>This is an example description of an event we might host, describing what will be covered and what attendees might hope to gain.</p>
@@ -61,7 +70,7 @@
 					</div>
 					<div class="row">
 						<div class="col s12">
-							<div class="card horizontal event">
+							<div class="card horizontal event hoverable">
 								<div class="event-side">
 									<h5>3/25/2017</h5>
 									<h5>SH 125</h5>
@@ -80,10 +89,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="divider"></div> <br />
-					<div class="center-align">
-						<iframe src="https://calendar.google.com/calendar/embed?src=andrew.cmu.edu_kb5kaku0ltplickj3q6dh5tii0%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-					</div>
+					
+					
 				</div>
 				<div class="divider"></div>
 				<div name="tutorials" class="section white">
@@ -95,7 +102,7 @@
 					</div>
 					<div class="row">
 						<div class="col s6 m3">
-							<div class="card">
+							<div class="card hoverable">
 								<div class="card-content">
 									<span class="card-title">scikit</span>
 									<p>brief description</p>
@@ -107,7 +114,7 @@
 						</div>
 
 						<div class="col s6 m3">
-							<div class="card">
+							<div class="card hoverable">
 								<div class="card-content">
 									<span class="card-title">numpy</span>
 									<p>brief description</p>
@@ -119,7 +126,7 @@
 						</div>
 
 						<div class="col s6 m3">
-							<div class="card">
+							<div class="card hoverable">
 								<div class="card-content">
 									<span class="card-title">weka</span>
 									<p>brief description</p>
@@ -131,7 +138,7 @@
 						</div>
 
 						<div class="col s6 m3">
-							<div class="card">
+							<div class="card hoverable">
 								<div class="card-content">
 									<span class="card-title">sql</span>
 									<p>brief description</p>
@@ -149,7 +156,7 @@
 
 					<div class="row">
 						<div class="col s12 m12">
-							<div class="card">
+							<div class="card hoverable">
 								<div class="card-image">
 									<iframe class="lecture-video" width="100%" max-height="315" src="https://www.youtube.com/embed/M59h7CFUwPU?rel=0" frameborder="0" allowfullscreen></iframe>
 								</div>
@@ -162,36 +169,35 @@
 					</div>
 				</div>
 
-                      <div class="row">
-                          <h5 class="left sub_header">Data Repositories</h5>
-                        </div>
-                        <div class="row">
-                          <div class="col s6 m6">
-                            <div class="card">
-                              <div class="card-content">
-                                <span class="card-title">re3data</span>
-                                <p>Research data for the sciences, engineering, and humanities.</p>
-                              </div>
-                              <div class="card-action">
-                                <a href="http://www.re3data.org/browse/by-subject/">View Repository</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                          <div class="col s6 m6">
-                            <div class="card">
-                              <div class="card-content">
-                                <span class="card-title">Yahoo Finance</span>
-                                <p>Historical stock data on all public companies.</p>
-                              </div>
-                              <div class="card-action">
-                                <a href="https://finance.yahoo.com/">View Repository</a>
-                              </div>
-                            </div>
-                          </div>
-
-           
-                        </div>
+				<div class="section white">
+					<div class="row">
+						<h5 class="left sub_header">Data Repositories</h5>
+					</div>
+					<div class="row">
+						<div class="col s6 m6">
+							<div class="card hoverable">
+								<div class="card-content">
+								<span class="card-title">re3data</span>
+								<p>Research data for the sciences, engineering, and humanities.</p>
+								</div>
+								<div class="card-action">
+								<a href="http://www.re3data.org/browse/by-subject/">View Repository</a>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m6">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">Yahoo Finance</span>
+									<p>Historical stock data on all public companies.</p>
+								</div>
+								<div class="card-action">
+									<a href="https://finance.yahoo.com/">View Repository</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<div class="divider"></div>
 
@@ -201,47 +207,52 @@
 					<div class="row center-align">
 						<!-- George -->
 						<div class="col s6 m3">
-							<img alt="george" class="face circle " src="img/face_placeholder.jpg">
+							<img alt="george" class="face circle " src="img/george.jpg">
 							<p>George Stoica</p>
-							<p>President</p>
+							<p><strong>President</strong></p>
 						</div>
 						<!-- Karn -->
 						<div class="col s6 m3">
-							<img alt="george" class="face circle" src="img/face_placeholder.jpg">
+							<img alt="george" class="face circle" src="img/karn.jpg">
 							<p>Karnkumar Dalmia</p>
-							<p>Vice President</p>
+							<p><strong>Vice President</strong></p>
 						</div>
 						<!-- John -->
 						<div class="col s6 m3">
-							<img alt="george" class="face circle" src="img/face_placeholder.jpg">
+							<img alt="george" class="face circle" src="img/john.jpg">
 							<p>John Curcio</p>
-							<p>Treasurer</p>
+							<p><strong>Treasurer</strong></p>
 						</div>
 						<!-- Sarah -->
 						<div class="col s6 m3">
-							<img alt="george" class="face circle" src="img/face_placeholder.jpg">
+							<img alt="george" class="face circle" src="img/sarah.jpg">
 							<p>Sarah Shy</p>
-							<p>Outreach Chair</p>
+							<p><strong>Outreach Chair</strong></p>
 						</div>
 					</div>
 					<div class="row center-align">
 						<!-- Pavan -->
-						<div class="col s6 m4">
-							<img alt="george" class="face circle" src="img/face_placeholder.jpg">
+						<div class="col s6 m3">
+							<img alt="george" class="face circle" src="img/pavan.jpg">
 							<p>Pavan Gollapalli</p>
-							<p>Webmaster</p>
+							<p><strong>Webmaster</strong></p>
 						</div>
 						<!-- Ritika -->
-						<div class="col s6 m4">
-							<img alt="george" class="face circle" src="img/face_placeholder.jpg">
+						<div class="col s6 m3">
+							<img alt="george" class="face circle" src="img/ritika.jpg">
 							<p>Ritika Srivastava</p>
-							<p>Data Repository Manager</p>
+							<p><strong>Data Repository Manager</strong></p>
 						</div>
 						<!-- Eddie -->
-						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/face_placeholder.jpg">
+						<div class="col s12 m3">
+							<img alt="george" class="face circle" src="img/eddie.jpg">
 							<p>Eddie Dryer</p>
-							<p>Corporate Outreach Chair</p>
+							<p><strong>Corporate Outreach Chair<strong></p>
+						</div>
+						<div class="col s12 m3">
+							<img alt="george" class="face circle" src="img/ventura.jpg">
+							<p>Sam Ventura</p>
+							<p><strong>Faculty Advisor<strong></p>
 						</div>
 					</div>
 				</div>
