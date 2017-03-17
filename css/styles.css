@@ -30,6 +30,20 @@ main {
     min-height:200px;
 }
 
+.caption {
+    position: relative;
+    top: 30%;
+}
+
+.caption-box {
+    /*background-color: #767676;*/
+}
+
+.caption-background {
+    position: absolute;
+
+}
+
 .event-side{
     width:20%;
     /*height:100%;*/
