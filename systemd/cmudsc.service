@@ -1,0 +1,10 @@
+[Unit]
+Description=cmudsc
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/root/go/src/github.com/thepavangollapalli/DSC_website
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
