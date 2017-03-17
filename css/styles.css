@@ -48,9 +48,15 @@ main {
 @media(max-width: 750px){
     .event-side{
     width:40%;
+    padding:6%;
     }
 
     .event-main{
     width:50%;
+    padding:6%;
+    }
+
+    .calendar{
+        display:none;
     }
 }
