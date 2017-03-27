@@ -107,16 +107,22 @@ main {
     }
 
 }
-@media(max-width:850px){
+@media(max-width:925px){
     .caption {
-            height:17vh;
+            height:20vh;
             width:50%;
+            border:1px solid white;
         }
 }
 
-@media(max-width: 500px){
+@media(max-width: 525px){
+
     .caption {
         height:12vh;
+        width:50%;
+        position: relative;
+        top: 30%;
+        height:30vh;
         width:50%;
     }
 }
