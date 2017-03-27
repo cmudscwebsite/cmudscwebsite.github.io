@@ -1,3 +1,7 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -17,6 +21,11 @@ main {
 	z-index:-100;
     height:95vh;
     padding-bottom:10px;
+    background-position: 50% 0px !important;
+    /*background-image:url("../img/header.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: top;*/
+    /*background-size: 100% 100%;*/
 }
 
 .sub_header {
@@ -36,21 +45,17 @@ main {
     position: relative;
     top: 30%;
     min-height:30vh;
-    width:55vw;
-    background-image:url("../img/header.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 100%;
+    /*width:55vw;*/
 }
 
-.caption-box.parent {
-    /*background-color: #767676;*/
-    style:none;
+.caption-box {
+    background-color: rgba(0,0,0,0.5);
+    /*style:none;*/
 }
 
 .caption-background {
-    position: absolute;
-
+    /*position: absolute;*/
+    height:100%;
 }
 
 .event-side{
@@ -76,7 +81,8 @@ main {
 
     .event-main{
     width:50%;
-    padding:6%;
+    padding:4%;
+    /*padding-right:1%;*/
     }
 
     .calendar{
@@ -86,4 +92,8 @@ main {
 
 strong{
     font-weight:bold;
+}
+
+#sidenav-overlay{
+    display:none;
 }
