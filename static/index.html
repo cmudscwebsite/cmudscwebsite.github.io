@@ -4,6 +4,8 @@
 		<title>CMU DSC | Home</title>
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Montserrat font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
 		<!-- Compiled and minified CSS -->
 		<link href="scss/materialize.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -20,12 +22,20 @@
 		<header class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper">
-					<a href="#home" class="brand-logo" style="padding-left:2%"><i class="medium material-icons">search</i></a>
-					<ul id="nav-mobile" class="right">
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- <a href="#home" class="brand-logo" style="padding-left:2%"><i class="medium material-icons">search</i></a> -->
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#home">Home</a></li>
 						<li><a href="#about" data-scroll-nav="0">About Us</a></li>
 						<li><a href="#events" data-scroll-nav="1">Club Events</a></li>
 						<li><a href="#tutorials" data-scroll-nav="2">Resources</a></li>
 						<li><a href="#team" data-scroll-nav="3">Leadership</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#events">Club Events</a></li>
+						<li><a href="#tutorials">Resources</a></li>
+						<li><a href="#team">Leadership</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -36,11 +46,11 @@
 			<div class="parallax-container">
 				<a name="home"></a>
 				<div class="parallax">
-					<img class = "caption-background" alt="parallax" src="img/high_res_background.jpg">
-					<div class="container caption z-depth-5"">
+					<img class="caption-background" alt="parallax" src="img/bg.jpg">
+					<div class="container caption">
 						<div class="row">
 							<div class="col s4 m2"></div>
-							<div class="col s4 m8 center caption-box><h1 class="white-text "></h1><h6 class="white-text"> </h6><br></div>
+							<div class="col s12 m8 center z-depth-5 caption-box"><h1 class="white-text ">Data Science Club</h1><h6 class="white-text"> Carnegie Mellon University</h6><br></div>
 							<div class="col s4 m2"></div>
 						</div>
 					</div>
@@ -294,9 +304,11 @@
 				</div>
 			</div>
 			<script>
+				$(document).ready(function(){
+					$(".button-collapse").sideNav();
+				});
 				$(function(){
 					$.scrollIt();
-					console.log("scrollIt loaded")
 				});
 				$("a[href='#home']").click(function() {
 				  $("html, body").animate({ scrollTop: 0 }, "slow");
