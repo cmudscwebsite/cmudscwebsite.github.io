@@ -20,7 +20,7 @@
 	<body>
 
 		<header class="navbar-fixed">
-			<nav>
+			<nav class="teal lighten-2">
 				<div class="nav-wrapper">
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 					<!-- <a href="#home" class="brand-logo" style="padding-left:2%"><i class="medium material-icons">search</i></a> -->
@@ -32,10 +32,11 @@
 						<li><a href="#team" data-scroll-nav="3">Leadership</a></li>
 					</ul>
 					<ul class="side-nav" id="mobile-demo">
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#events">Club Events</a></li>
-						<li><a href="#tutorials">Resources</a></li>
-						<li><a href="#team">Leadership</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about" data-scroll-nav="0">About Us</a></li>
+						<li><a href="#events" data-scroll-nav="1">Club Events</a></li>
+						<li><a href="#tutorials" data-scroll-nav="2">Resources</a></li>
+						<li><a href="#team" data-scroll-nav="3">Leadership</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -50,7 +51,10 @@
 					<div class="container caption">
 						<div class="row">
 							<div class="col s4 m2"></div>
-							<div class="col s12 m8 center z-depth-5 caption-box"><h1 class="white-text ">Data Science Club</h1><h6 class="white-text"> Carnegie Mellon University</h6><br></div>
+							<div class="col s12 m8 center caption-box">
+								<!-- <h1 class="white-text ">Data Science Club</h1><h6 class="white-text"> Carnegie Mellon University</h6><br> -->
+								<img src="img/header.png" >
+							</div>
 							<div class="col s4 m2"></div>
 						</div>
 					</div>
