@@ -6,6 +6,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    width:100%;
+    overflow-x:hidden;
 }
 
 main {
@@ -111,19 +113,20 @@ main {
     .caption {
             height:20vh;
             width:50%;
+<<<<<<< Updated upstream
             /*border:1px solid white;*/
+=======
+>>>>>>> Stashed changes
         }
 }
 
-@media(max-width: 525px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 525px){
 
     .caption {
         height:12vh;
         width:50%;
         position: relative;
-        top: 30%;
-        height:30vh;
-        width:50%;
+        top: 50%;
     }
 }
 
