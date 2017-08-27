@@ -138,4 +138,6 @@ strong{
     display:none;
 }
 
-
+.disabled{
+    background-color:#DFDFDF;
+}
