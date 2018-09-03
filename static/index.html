@@ -21,7 +21,6 @@
 		     document.getElementById('parallax').style.display = "none";
 		    }
 		</script>
-		<!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
 		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
  	</head>
 	<body>
@@ -30,20 +29,20 @@
 			<nav style="background-color:#6e8dbf;"> <!--teal lighten-2-->
 				<div class="nav-wrapper">
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<a href="#home" class="brand-logo hide-on-med-and-down valign-wrapper" style="padding-left:2%"><i class="medium material-icons">search</i> <span class="valign" style="font-size:20px;">Home</span></a>
+					<!-- <a href="#home" class="brand-logo hide-on-med-and-down valign-wrapper" style="padding-left:2%"><i class="medium material-icons">search</i> <span class="valign" style="font-size:20px;">Home</span></a> -->
 					<ul class="right hide-on-med-and-down">
-						<!-- <li><a href="#home">Home</a></li> -->
-						<li><a href="#about" data-scroll-nav="0">About Us</a></li>
-						<li><a href="#events" data-scroll-nav="1">Club Events</a></li>
-						<li><a href="#tutorials" data-scroll-nav="2">Resources</a></li>
-						<li><a href="#team" data-scroll-nav="3">Leadership</a></li>
+						<li><a href="#home" data-scroll-nav="0">Home</a></li>
+						<li><a href="#about" data-scroll-nav="1">About Us</a></li>
+						<li><a href="#events" data-scroll-nav="2">Club Events</a></li>
+						<li><a href="#tutorials" data-scroll-nav="3">Resources</a></li>
+						<li><a href="#team" data-scroll-nav="4">Leadership</a></li>
 					</ul>
 					<ul class="side-nav" id="mobile-demo">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about" data-scroll-nav="0">About Us</a></li>
-						<li><a href="#events" data-scroll-nav="1">Club Events</a></li>
-						<li><a href="#tutorials" data-scroll-nav="2">Resources</a></li>
-						<li><a href="#team" data-scroll-nav="3">Leadership</a></li>
+						<li><a href="#home" data-scroll-nav="0">Home</a></li>
+						<li><a href="#about" data-scroll-nav="1">About Us</a></li>
+						<li><a href="#events" data-scroll-nav="2">Club Events</a></li>
+						<li><a href="#tutorials" data-scroll-nav="3">Resources</a></li>
+						<li><a href="#team" data-scroll-nav="4">Leadership</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -52,18 +51,12 @@
 		<main>
 		  <!-- Background Image --> 
 			<div class="parallax-container">
-				<a name="home"></a>
 				<div class="parallax">
-					<img class="caption-background" alt="parallax" src="img/bg.jpg">
 					<div class="container caption">
 						<div class="row">
 							<div class="col s4 m2"></div>
 							<div class="col s12 m8 center caption-box">
-								<!-- <h1 class="white-text ">Data Science Club</h1><h6 class="white-text"> Carnegie Mellon University</h6><br> -->
 								<img src="img/header.png" class="hide-on-small-only">
-							</div>
-							<div class="col s12 center hide-on-med-and-up">
-								<h1 class="black-text ">Data Science Club</h1><h6 class="black-text"> Carnegie Mellon University</h6><br>
 							</div>
 							<div class="col s4 m2"></div>
 						</div>
@@ -72,7 +65,7 @@
 			</div>
 
 			<div class="container">
-				<div name="about" class="section white" data-scroll-index="0">
+				<div name="about" class="section white" data-scroll-index="1">
 					<a name="about"></a>
 					<div class="center-align">
 						<h3>About Us</h3>
@@ -81,13 +74,13 @@
 
 							We provide a platform for CMU students to develop hands-on skills, gain exposure to cutting-edge developments, and share their own projects in data science, including specific areas such as big data and machine learning.
 
-							To stay tuned for updates, you can follow this website, join the community on <a target="_blank" href="https://www.facebook.com/CMDataScienceClub">Facebook</a>, and sign up for our mailing list on <a target="_blank" href="https://thebridge.cmu.edu/organization/CarnegieMellonDataScienceClub">The Bridge</a>. 
+							To stay tuned for updates, you can follow this website, join the community on <a target="_blank" href="https://www.facebook.com/CMUDataScienceClub/">Facebook</a>, and sign up for our mailing list on <a target="_blank" href="https://thebridge.cmu.edu/organization/CarnegieMellonDataScienceClub">The Bridge</a>. 
 
 						</p>
 					</div>
 				</div>
 				<div class="divider"></div>
-				<div name="events" class="section white" data-scroll-index="1">
+				<div name="events" class="section white" data-scroll-index="2">
 					<a name="events"></a>
 					<h3 class="center-align"> Club Events </h3><br />
 					<div class="hide center-align calendar">
@@ -98,38 +91,15 @@
 						<div class="col s12">
 							<div class="card horizontal event hoverable">
 								<div class="event-side">
-									<h5>11/2/2017</h5>
-									<h5>5:00-6:00 PM</h5>
-									<h5>DH A302</h5>
-									<a class="waves-effect waves-light btn" style="margin-top:5%;" href="https://www.facebook.com/events/140999613294188/" target="_blank">RSVP</a>
+									<h5>9/5/2018</h5>
+									<h5>4:30-6:30 PM</h5>
+									<h5>The Cut</h5>
+									<a class="waves-effect waves-light btn disabled" style="margin-top:5%;" href="https://www.facebook.com/events/140999613294188/" target="_blank">RSVP</a>
 								</div>
 								<div class="event-main">
-									<h4>Donuts and Clustering</h4>
-									<div class="chip">Algorithms</div>
-									<p>Come out for donuts, cider, and to hear our friend Jisu Kim, a PhD student in Statistics and Machine Learning, talk about clustering! All are welcome.</p>
-									<p>In this presentation, we will view several clustering algorithms as estimating population quantities, and probe the relationships between them. Selected clustering algorithms (but not all) are going to be covered, including Mean-shift, level set clustering, and spectral clustering.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col s12">
-							<div class="card horizontal event hoverable">
-								<div class="event-side">
-									<h5>9/16/2017</h5>
-									<h5>BH A51</h5>
-									<a class="waves-effect waves-light btn" style="margin-top:5%;" href="https://www.facebook.com/events/111224622898575/" target="_blank">RSVP</a>
-								</div>
-								<div class="event-main">
-									<h4>Correlation One Datahon</h4>
-									<div class="chip">Kaggle</div>
-									<p>The Datathon brings together the best minds
-									in mathematics, engineering, science, and
-									technology to collaborate and compete using
-									the world’s most important data sets.</p>
-									<p>Sign up for the opportunity to participate at The Citadel Cup and win $100,000 in cash prizes!</p>
-									<p>Winning teams are also eligible to interview with the sponsors (Citadel &amp Citadel Securities)!</p>
+									<h4>CMU Activities Fair</h4>
+									<p>
+										CMU's semesterly Activities Fair is back! Stop by our table on the Cut, alongside many of the other great student orgs on campus, to learn more about our plans this semester (and be sure to get on our mailing list while you're at it, you aren't going to want to miss out!).
 									</p>
 								</div>
 							</div>
@@ -140,14 +110,16 @@
 						<div class="col s12">
 							<div class="card horizontal event hoverable">
 								<div class="event-side">
-									<h5>9/25/2017</h5>
+									<h5>9/6/2018</h5>
+									<h5>6-7pm</h5>
 									<h5>TBD</h5>
-									<a class="disabled waves-effect waves-light btn" style="margin-top:5%;">RSVP</a>
+									<a class="waves-effect waves-light btn disabled" style="margin-top:5%;" href="https://www.facebook.com/events/111224622898575/" target="_blank">RSVP</a>
 								</div>
 								<div class="event-main">
-									<h4>Applications of Data Science in Health</h4>
-									<div class="chip">Temp</div>
-									<p>TBD</p>
+									<h4>General Body Meeting</h4>
+									<p>
+										We're holding a General Body Meeting and everyone's invited! We'll be discussing our plans and goals for the semester, along with a lot of upcoming opportunities and events occuring over the next couple weeks. 
+										This is a chance for you to meet us and share your thoughts on what you'd like to see more of. 
 									</p>
 								</div>
 							</div>
@@ -159,7 +131,6 @@
 							<div class="card horizontal event hoverable">
 								<div class="event-side">
 									<h5>TBD</h5>
-									<h5>DH A302</h5>
 									<a class="disabled waves-effect waves-light btn" style="margin-top:5%;">RSVP</a>
 								</div>
 								<div class="event-main">
@@ -168,7 +139,8 @@
 									<div class="chip">scikit-learn</div>
 									<div class="chip">Tensorflow</div>
 									<div class="chip">Databricks</div>
-									<p>We're hosting series of introductory data science workshops to teach the basics of Python data science frameworks and a couple of intermediate applications that will prepare them for the Correlation One Datathon!</p>
+									<p>
+										We'll be a hosting series of introductory data science workshops to teach the basics of Python data science frameworks and a couple of intermediate applications that will prepare them for the Correlation One Datathon!</p>
 									</p>
 								</div>
 							</div>
@@ -178,7 +150,7 @@
 					
 				</div>
 				<div class="divider"></div>
-				<div name="tutorials" class="section white" data-scroll-index="2">
+				<div name="tutorials" class="section white" data-scroll-index="3">
 					<a name="tutorials"></a>
 					<h3 class="center-align"> Resources </h3>
 
@@ -265,38 +237,36 @@
 					</div>
 					<div class="row">
 						<div class="col s12">
-							<div class="card horizontal event disabled">
+							<div class="card horizontal event hoverable">
 								<div class="event-side">
-									<h5>Tuesday, 4/11/17</h5>
-									<h5>4:30 PM</h5>
-									<h5>WEH 7500</h5>
+									<h5>Friday, 9/28/2018</h5>
+									<h5>TBD</h5>
 									<a target="_blank" href="https://goo.gl/forms/sHU9kYFhekZPp6vw1" class="disabled waves-effect waves-light btn indigo lighten-2" style="margin-top:5%;">RSVP</a>
 								</div>
 								<div class="event-main">
-									<h4>Effective Data Visualization</h4>
+									<h4>Creating Insightful Art - Alberto Cairo</h4>
 									<div class="chip">R</div>
-									<div class="chip">ggplot2</div>
-									<p>"The purpose of visualization is insight, not pictures." -- Ben Schneiderman</p>
-									<p>But how do we design data visualizations to convey real insight? This talk will introduce you to two frameworks for thinking about your own statistical graphics:</p>
-									<ul class="browser-default">
-										<li>Common-sense (but often forgotten) advice on making graphs readable and comprehensible</li>
-										<li>Research-backed advice based on how human visual perception works.</li>
-									</ul>
+									<p>
+										"Visualization is a powerful tool that depends on creativity and science. Its power lies in the ability to represent large amounts of information to a broad audience. Forming a narrative out of data can lead to invaluable insights. Our goal as designers is to make understanding complex information both easy and enjoyable for anyone."
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="row">
 						<div class="col s12">
-							<div class="card horizontal event disabled">
+							<div class="card horizontal event hoverable">
 								<div class="event-side">
-									<h5>2/21/2017</h5>
+									<h5>TBD</h5>
+									<a class="disabled waves-effect waves-light btn" style="margin-top:5%;">RSVP</a>
 								</div>
 								<div class="event-main">
-									<h4>NLP Workshop</h4>
-									<div class="chip">Python</div>
-									<div class="chip">NLP</div>
-									<p>We learned about text analysis through a case study about dating profiles. See <a target="_blank" href="https://github.com/PLBMR/cmuDSCWorkshopNotebooks/blob/master/practicalNLPWorkshop.ipynb" >here</a> for the python notebook from the lecture. </p>
+									<h4>Resume Workshop</h4>
+									<p>
+										With a lot of career fairs fast approaching, it's time to polish up those resumes. We're interested in offering some workshops to cover some helpful advice  and hone in those interview skills so we can all feel prepared come hiring season. 
+										Come by our GBM on September 6, 6-7pm to share your thoughts on whether these are things you are interested in!
+									</p>
 								</div>
 							</div>
 						</div>
@@ -315,7 +285,7 @@
 								<p>Research data for the sciences, engineering, and humanities.</p>
 								</div>
 								<div class="card-action">
-								<a href="http://www.re3data.org/browse/by-subject/">View Repository</a>
+								<a href="http://www.re3data.org/browse/by-subject/" target="_blank">View Repository</a>
 								</div>
 							</div>
 						</div>
@@ -326,7 +296,7 @@
 									<p>Historical stock data on all public companies.</p>
 								</div>
 								<div class="card-action">
-									<a href="https://finance.yahoo.com/">View Repository</a>
+									<a href="https://finance.yahoo.com/" target="_blank">View Repository</a>
 								</div>
 							</div>
 						</div>
@@ -335,76 +305,40 @@
 
 				<div class="divider"></div>
 
-				<div class="section white" data-scroll-index="3">
-					<a name="team"></a>
+				<div class="section white" data-scroll-index="4">
 					<h3 class="center-align"> Leadership </h3>
 					<div class="row center-align">
-						<!-- George -->
 						<div class="col s12 m4">
-							<img alt="george" class="face circle " src="img/george.jpg">
-							<p>George Stoica</p>
+							<img alt="John" class="face circle " src="img/john.jpg">
+							<p>John Curcio</p>
 							<p><strong>President</strong></p>
 						</div>
-						<!-- Karn -->
 						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/karn.jpg">
-							<p>Karnkumar Dalmia</p>
+							<img alt="Alisa" class="face circle" src="img/alisa.jpg">
+							<p>Alisa Chang</p>
 							<p><strong>Vice President</strong></p>
 						</div>
-						<!-- John -->
 						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/john.jpg">
-							<p>John Curcio</p>
+							<img alt="Jason" class="face circle" src="img/jason.jpg">
+							<p>Jason Woo Baik</p>
 							<p><strong>Treasurer</strong></p>
 						</div>
 
 					</div>
-					<div class="row center-align">							
-						<!-- Sarah -->
+					<div class="row center-align">	
+						<div class="col s12 m4"></div>
 						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/sarah.jpg">
-							<p>Sarah Shy</p>
-							<p><strong>Outreach Chair/Workshop Coordinator</strong></p>
+							<img alt="Josh" class="face circle" src="img/josh.jpg">
+							<p>Josh Moavenzadeh</p>
+							<p><strong>Vice President/Webmaster</strong></p>
 						</div>
-						<!-- Pavan -->
-						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/pavan.jpg">
-							<p>Pavan Gollapalli</p>
-							<p><strong>Webmaster</strong></p>
-						</div>
-						<!-- Ritika -->
-						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/ritika.jpg">
-							<p>Ritika Srivastava</p>
-							<p><strong>Data Repository Manager</strong></p>
-						</div>
-						
+		
 					</div>
 					<div class="row center-align">
-						<!-- Eddie -->
-						<div class="col s12 m4 offset-m4">
-							<img alt="eddie" class="face circle" src="img/eddie.jpg">
-							<p>Eddie Dryer</p>
-							<p><strong>Corporate Outreach Chair</strong></p>
-						</div>
-						
-					</div>
-					<div class="row center-align">
+						<div class="col s12 m4"></div>
 						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/ventura.jpg">
-							<p>Sam Ventura</p>
-							<p><strong>Faculty Advisor</strong></p>
-						</div>
-						<!-- Ritika -->
-						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/mahjd.png">
-							<p>Majd Sakr</p>
-							<p><strong>Faculty Advisor</strong></p>
-						</div>
-						<!-- Pavan -->
-						<div class="col s12 m4">
-							<img alt="george" class="face circle" src="img/david.jpg">
-							<p>David Kosbie</p>
+							<img alt="Freeman" class="face circle" src="img/freeman.jpg">
+							<p>Peter Freeman</p>
 							<p><strong>Faculty Advisor</strong></p>
 						</div>
 					</div>
@@ -427,7 +361,7 @@
 		<footer class="page-footer">
 			<div class="footer-copyright">
 				<div class="container">
-					<center>&copy 2017 Carnegie Mellon Data Science Club</center>
+					<center>&copy 2018 Carnegie Mellon Data Science Club</center>
 				</div>
 			</div>
 		</footer>

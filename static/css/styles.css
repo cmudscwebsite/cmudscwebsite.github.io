@@ -23,11 +23,12 @@ main {
 	z-index:-100;
     height:95vh;
     padding-bottom:10px;
-    /*background-position: 50% 0px !important;*/
-    /*background-image:url("../img/header.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: top;*/
-    /*background-size: 100% 100%;*/
+}
+
+.parallax {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sub_header {
@@ -111,13 +112,10 @@ main {
 }
 @media(max-width:925px){
     .caption {
-            height:20vh;
-            width:50%;
-<<<<<<< Updated upstream
-            /*border:1px solid white;*/
-=======
->>>>>>> Stashed changes
-        }
+        height:20vh;
+        width:50%;
+        /*border:1px solid white;*/
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 525px){
