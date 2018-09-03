@@ -1,0 +1,131 @@
+---
+title: "dplyr for Data Manipulation"
+author: "Jason Baik"
+date: "August 5, 2017"
+output: html_document
+---
+
+```{r include=FALSE}
+tutorial::go_interactive()
+```
+
+# **What is dplyr?** 
+* developed by Hadley Wickham of R Studio 
+* provides a "grammar for data manipulation and for operating on data frames"
+* some key verbs include: 
+1. select(): return a subset of columns of a data frame
+2. filter(): extract a subset of rows from a data frame
+3. arrange(): reorder rows of a data frame
+4. mutate(): add new variables / columns or transform existing variables
+5. summarise() / summarize(): generate a summary statistics of different variables in the data frame
+6. %>%: the "pipe" operator, used to connect multiple verb actions together.
+
+### Installing dplyr
+
+install.packages("dplyr")  
+OR    
+install.packages("devtools")  
+library(devtools)  
+install_github("hadley/dplyr")
+
+
+### select()
+* used to "select" columns of a data frame.
+* allows you to get few columns you want to focus on.
+
+> Additional Options: a number of special functions that only work inside select()  
+
+1. starts_with() / ends_with(): starts/ends with a prefix
+2. contains(): contains a literal string
+3. matches(): matches a regular expression
+4. one_of(): variables in character vector
+5. everything(): all variables
+6. %in%: a more intuitive interface as a binary operator, which returns a logical vector indicating if there is a match or not for its left operand.
+
+```{r}
+# Let's select the columns in the diamonds datatset that starts with the letter c!!!
+library(ggplot2) #load this package to retrieve diamonds dataset
+library(dplyr)
+diamonds.f <- select(diamonds, starts_with("c"))
+names(diamonds.f)
+```
+
+```{r}
+library(dplyr)
+names(iris)[1:3]
+iris.1 <- select(iris, Sepal.Length:Petal.Length)
+head(iris.1)
+```
+
+#### omit columns using the negative sign!
+
+```{r}
+library(dplyr)
+names(iris)[1:3]
+iris.1 <- select(iris, -(Sepal.Length:Petal.Length))
+head(iris.1)
+```
+
+### filter()
+* used to extract rows from a dataframe.
+* faster than subset()
+
+```{r}
+library(dplyr)
+iris.1 <- filter(iris, Species == "setosa")
+head(iris.1)
+```
+
+### arrange()
+* used to reorder rows of a dataframe according to one of the columns.
+* can be arranged in increasing and decreasing order.
+
+```{r}
+library(dplyr)
+iris.1 <- arrange(iris, Sepal.Length)
+iris.2 <- arrange(iris, desc(Sepal.Length))
+head(iris.1)
+head(iris.2)
+```
+
+### rename()
+* have new name on left-hand side of the = sign and old name on the right-hand side.
+
+```{r}
+library(dplyr)
+iris <- rename(iris, SepalL = Sepal.Length, SepalW = Sepal.Width, PetalL = Petal.Length, PetalW = Petal.Width)
+head(iris)
+```
+
+### mutate()
+* computes transformation of variables in a data frame
+
+```{r}
+library(dplyr)
+iris <- mutate(iris, Sepal_avg = mean(Sepal.Length))
+head(iris)
+```
+
+### transmute(): same as mutate, but drops all the other unchanged variables
+
+```{r}
+library(dplyr)
+iris <- transmute(iris, Sepal_avg = mean(Sepal.Length))
+head(iris)
+```
+
+### Pipeline Operator (%>%)
+* imported from the magrittr package
+* handy for stringing together multiple dplyr functions in a sequence
+
+```{r}
+library(dplyr)
+iris <- mutate(iris, Sepal_avg = mean(Sepal.Length)) %>% summarise(median_sepal = median(Sepal_avg))
+iris
+```
+
+### Additional useful functions 
+
+* summarise(): creates summary statistics for a given column in dataframe such as finding the mean
+* group_by(): split dataframe by some variable, apply a function & combine output
+* sample_n: select random rows from a dataframe.

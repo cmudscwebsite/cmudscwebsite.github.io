@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+		<title>CMU DSC | Home</title>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Montserrat font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link href="scss/materialize.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<!-- JQuery and Materialize.js -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script src="js/index_controller.js"></script>
+		<!-- http://www.bytemuse.com/scrollIt.js/ -->
+		<script src="js/scrollIt.js" type="text/javascript"></script>
+		<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		     document.getElementById('parallax').style.display = "none";
+		    }
+		</script>
+		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+ 	</head>
+	<body>
+
+		<header class="navbar-fixed">
+			<nav style="background-color:#6e8dbf;"> <!--teal lighten-2-->
+				<div class="nav-wrapper">
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<!-- <a href="#home" class="brand-logo hide-on-med-and-down valign-wrapper" style="padding-left:2%"><i class="medium material-icons">search</i> <span class="valign" style="font-size:20px;">Home</span></a> -->
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#home" data-scroll-nav="0">Home</a></li>
+						<li><a href="#about" data-scroll-nav="1">About Us</a></li>
+						<li><a href="#events" data-scroll-nav="2">Club Events</a></li>
+						<li><a href="#tutorials" data-scroll-nav="3">Resources</a></li>
+						<li><a href="#team" data-scroll-nav="4">Leadership</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="#home" data-scroll-nav="0">Home</a></li>
+						<li><a href="#about" data-scroll-nav="1">About Us</a></li>
+						<li><a href="#events" data-scroll-nav="2">Club Events</a></li>
+						<li><a href="#tutorials" data-scroll-nav="3">Resources</a></li>
+						<li><a href="#team" data-scroll-nav="4">Leadership</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+		  <!-- Background Image --> 
+			<div class="parallax-container">
+				<div class="parallax">
+					<div class="container caption">
+						<div class="row">
+							<div class="col s4 m2"></div>
+							<div class="col s12 m8 center caption-box">
+								<img src="img/header.png" class="hide-on-small-only">
+							</div>
+							<div class="col s4 m2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div name="about" class="section white" data-scroll-index="1">
+					<a name="about"></a>
+					<div class="center-align">
+						<h3>About Us</h3>
+						<p>
+							We're an organization for people to explore their passions for data science in a competitive and collaborative setting. Our members are eager to use their talents to solve real-world problems and to share their knowledge with the community.<br><br>
+
+							We provide a platform for CMU students to develop hands-on skills, gain exposure to cutting-edge developments, and share their own projects in data science, including specific areas such as big data and machine learning.
+
+							To stay tuned for updates, you can follow this website, join the community on <a target="_blank" href="https://www.facebook.com/CMUDataScienceClub/">Facebook</a>, and sign up for our mailing list on <a target="_blank" href="https://thebridge.cmu.edu/organization/CarnegieMellonDataScienceClub">The Bridge</a>. 
+
+						</p>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div name="events" class="section white" data-scroll-index="2">
+					<a name="events"></a>
+					<h3 class="center-align"> Club Events </h3><br />
+					<div class="hide center-align calendar">
+						<iframe src="https://calendar.google.com/calendar/embed?src=andrew.cmu.edu_kb5kaku0ltplickj3q6dh5tii0%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="650" height="487.5" frameborder="0" scrolling="no"></iframe>
+					</div><br />
+
+					<div class="row">
+						<div class="col s12">
+							<div class="card horizontal event hoverable">
+								<div class="event-side">
+									<h5>9/5/2018</h5>
+									<h5>4:30-6:30 PM</h5>
+									<h5>The Cut</h5>
+									<a class="waves-effect waves-light btn disabled" style="margin-top:5%;" href="https://www.facebook.com/events/140999613294188/" target="_blank">RSVP</a>
+								</div>
+								<div class="event-main">
+									<h4>CMU Activities Fair</h4>
+									<p>
+										CMU's semesterly Activities Fair is back! Stop by our table on the Cut, alongside many of the other great student orgs on campus, to learn more about our plans this semester (and be sure to get on our mailing list while you're at it, you aren't going to want to miss out!).
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s12">
+							<div class="card horizontal event hoverable">
+								<div class="event-side">
+									<h5>9/6/2018</h5>
+									<h5>6-7pm</h5>
+									<h5>TBD</h5>
+									<a class="waves-effect waves-light btn disabled" style="margin-top:5%;" href="https://www.facebook.com/events/111224622898575/" target="_blank">RSVP</a>
+								</div>
+								<div class="event-main">
+									<h4>General Body Meeting</h4>
+									<p>
+										We're holding a General Body Meeting and everyone's invited! We'll be discussing our plans and goals for the semester, along with a lot of upcoming opportunities and events occuring over the next couple weeks. 
+										This is a chance for you to meet us and share your thoughts on what you'd like to see more of. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s12">
+							<div class="card horizontal event hoverable">
+								<div class="event-side">
+									<h5>TBD</h5>
+									<a class="disabled waves-effect waves-light btn" style="margin-top:5%;">RSVP</a>
+								</div>
+								<div class="event-main">
+									<h4>Data Science Summit</h4>
+									<div class="chip">numpy</div>
+									<div class="chip">scikit-learn</div>
+									<div class="chip">Tensorflow</div>
+									<div class="chip">Databricks</div>
+									<p>
+										We'll be a hosting series of introductory data science workshops to teach the basics of Python data science frameworks and a couple of intermediate applications that will prepare them for the Correlation One Datathon!</p>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="divider"></div>
+				<div name="tutorials" class="section white" data-scroll-index="3">
+					<a name="tutorials"></a>
+					<h3 class="center-align"> Resources </h3>
+
+					<div class="row">
+						<h5 class="left sub_header">Frameworks &amp; Tools</h5>
+					</div>
+					<div class="row">
+						<div class="col s6 m3">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">R</span>
+									<p>A free software environment for statistical computing and graphics</p>
+								</div>
+								<div class="card-action">
+									<a target="_blank" href="tutorials/introtoR_final.html">View Tutorial</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col s6 m3">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">dplyr</span>
+									<p>A data manipulation library, providing a set of tools that help solve common data manipulation challenges</p>
+								</div>
+								<div class="card-action">
+									<a target="_blank" href="tutorials/dplyr_dummies.html">View Tutorial</a>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m3">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">scikit</span>
+									<p>Simple and efficient tools for data mining and data analysis in Python</p>
+								</div>
+								<div class="card-action">
+									<a target="_blank" href="http://scikit-learn.org/stable/documentation.html">View Tutorial</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col s6 m3">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">numpy</span>
+									<p>The fundamental package for scientific computing with Python</p>
+								</div>
+								<div class="card-action">
+									<a target="_blank" href="https://docs.scipy.org/doc/numpy/reference/">View Tutorial</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s6 m3">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">weka</span>
+									<p>A powerful, yet easy to use tool for machine learning and data mining</p>
+								</div>
+								<div class="card-action">
+									<a target="_blank" href="https://weka.waikato.ac.nz/explorer">View Tutorial</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col s6 m3">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">sql</span>
+									<p>A standard language for storing, manipulating and retrieving data in databases</p>
+								</div>
+								<div class="card-action">
+									<a target="_blank" href="https://www.w3schools.com/sql/">View Tutorial</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<h5 class="left sub_header">Workshops &amp; Lectures</h5>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<div class="card horizontal event hoverable">
+								<div class="event-side">
+									<h5>Friday, 9/28/2018</h5>
+									<h5>TBD</h5>
+									<a target="_blank" href="https://goo.gl/forms/sHU9kYFhekZPp6vw1" class="disabled waves-effect waves-light btn indigo lighten-2" style="margin-top:5%;">RSVP</a>
+								</div>
+								<div class="event-main">
+									<h4>Creating Insightful Art - Alberto Cairo</h4>
+									<div class="chip">R</div>
+									<p>
+										"Visualization is a powerful tool that depends on creativity and science. Its power lies in the ability to represent large amounts of information to a broad audience. Forming a narrative out of data can lead to invaluable insights. Our goal as designers is to make understanding complex information both easy and enjoyable for anyone."
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s12">
+							<div class="card horizontal event hoverable">
+								<div class="event-side">
+									<h5>TBD</h5>
+									<a class="disabled waves-effect waves-light btn" style="margin-top:5%;">RSVP</a>
+								</div>
+								<div class="event-main">
+									<h4>Resume Workshop</h4>
+									<p>
+										With a lot of career fairs fast approaching, it's time to polish up those resumes. We're interested in offering some workshops to cover some helpful advice  and hone in those interview skills so we can all feel prepared come hiring season. 
+										Come by our GBM on September 6, 6-7pm to share your thoughts on whether these are things you are interested in!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section white">
+					<div class="row">
+						<h5 class="left sub_header">Data Repositories</h5>
+					</div>
+					<div class="row">
+						<div class="col s6 m6">
+							<div class="card hoverable">
+								<div class="card-content">
+								<span class="card-title">re3data</span>
+								<p>Research data for the sciences, engineering, and humanities.</p>
+								</div>
+								<div class="card-action">
+								<a href="http://www.re3data.org/browse/by-subject/" target="_blank">View Repository</a>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m6">
+							<div class="card hoverable">
+								<div class="card-content">
+									<span class="card-title">Yahoo Finance</span>
+									<p>Historical stock data on all public companies.</p>
+								</div>
+								<div class="card-action">
+									<a href="https://finance.yahoo.com/" target="_blank">View Repository</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="section white" data-scroll-index="4">
+					<h3 class="center-align"> Leadership </h3>
+					<div class="row center-align">
+						<div class="col s12 m4">
+							<img alt="John" class="face circle " src="img/john.jpg">
+							<p>John Curcio</p>
+							<p><strong>President</strong></p>
+						</div>
+						<div class="col s12 m4">
+							<img alt="Alisa" class="face circle" src="img/alisa.jpg">
+							<p>Alisa Chang</p>
+							<p><strong>Vice President</strong></p>
+						</div>
+						<div class="col s12 m4">
+							<img alt="Jason" class="face circle" src="img/jason.jpg">
+							<p>Jason Woo Baik</p>
+							<p><strong>Treasurer</strong></p>
+						</div>
+
+					</div>
+					<div class="row center-align">	
+						<div class="col s12 m4"></div>
+						<div class="col s12 m4">
+							<img alt="Josh" class="face circle" src="img/josh.jpg">
+							<p>Josh Moavenzadeh</p>
+							<p><strong>Vice President/Webmaster</strong></p>
+						</div>
+		
+					</div>
+					<div class="row center-align">
+						<div class="col s12 m4"></div>
+						<div class="col s12 m4">
+							<img alt="Freeman" class="face circle" src="img/freeman.jpg">
+							<p>Peter Freeman</p>
+							<p><strong>Faculty Advisor</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$(".button-collapse").sideNav();
+				});
+				$(function(){
+					$.scrollIt();
+				});
+				$("a[href='#home']").click(function() {
+				  $("html, body").animate({ scrollTop: 0 }, "slow");
+				  return false;
+				});
+			</script>
+		</main>
+
+		<footer class="page-footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<center>&copy 2018 Carnegie Mellon Data Science Club</center>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
